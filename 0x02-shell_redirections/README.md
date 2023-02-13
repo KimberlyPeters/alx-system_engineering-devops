@@ -43,3 +43,5 @@
 * 20-hiago creates a script that removes all letters c and C from input
 ------------------------------------------
 * 21-reverse writes a script that reverse its input
+-----------------------------
+* 22-users_and_homes writes a script that displays all users and their home directories, sorted by users

@@ -41,3 +41,5 @@
 * 19-AZ replaces all characters A and c from input to Z and e respectively 
 ----------------------------------------
 * 20-hiago creates a script that removes all letters c and C from input
+------------------------------------------
+* 21-reverse writes a script that reverse its input

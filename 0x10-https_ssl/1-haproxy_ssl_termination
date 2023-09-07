@@ -33,21 +33,21 @@ defaults
 	errorfile 503 /etc/haproxy/errors/503.http
 	errorfile 504 /etc/haproxy/errors/504.http
 
-# start of parameters for aysuarex.tech
-frontend aysuarex.tech-http-frontend
+# start of parameters for kimberly.tech
+frontend kimberly.tech-http-frontend
 	bind	 *:80
 	http-request set-header X-Forwarded-Proto http
-	default_backend	 aysuarex.tech-backend
+	default_backend	 kimberly.tech-backend
 
 
-frontend  aysuarex.tech-https-frontend
-	bind *:443 ssl crt /etc/ssl/aysuarex.tech.pem
+frontend  kimberly.tech-https-frontend
+	bind *:443 ssl crt /etc/ssl/kimberly.tech.pem
 	http-request set-header X-Forwarded-Proto https
-        default_backend aysuarex.tech-backend
+        default_backend kimberly.tech-backend
 
 
-backend aysuarex.tech-backend
+backend kimberly.tech-backend
         balance roundrobin
-        server 914-web-01 44.210.150.159:80 check
-        server 914-web-02 35.173.47.15:80 check
+        server 914-web-01 52.91.156.244 check
+        server 914-web-02 100.25.171.126 check
 # end of parameters
